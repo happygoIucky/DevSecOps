@@ -1,9 +1,11 @@
+version: v1
+
 id:
   org: 601db758-d4ed-4195-bdce-08c2852d908c
   app: dd9a6b1e-3208-4f86-8ac9-785c0548d3f2
 
 # If below settings are not configured, scans will be performed for all supported scanners.
-#scanners:
+scanners:
   - sast
   - sca
   - secret
@@ -12,9 +14,9 @@ id:
 #  - dast
 
 # Configures languages for sast scanner. If not configured, scans will be performed on all supported languages
-#languages:
-#  - javascript
-#  - python
+languages:
+  - javascript
+  - python
 
 # Configures target url where dynamic scan should be performed.
 #dast:
