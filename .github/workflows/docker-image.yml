@@ -22,6 +22,5 @@ jobs:
           docker login -i $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag jawnlim89/devesecops:$(date +%s)
-
     - name: Docker Push
       run: docker push ${{secrets.DOCKER_USERS}}/devsecops
