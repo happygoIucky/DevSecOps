@@ -4,7 +4,7 @@ id:
   org: 601db758-d4ed-4195-bdce-08c2852d908c
   app: dd9a6b1e-3208-4f86-8ac9-785c0548d3f2
 
-# If below settings are not configured, scans will be performed for all supported scanners.
+# If below settings are not configured, scans will be performed for all supported scanners
 scanners:
   - sast
   - sca
