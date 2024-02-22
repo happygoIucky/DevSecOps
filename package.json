@@ -1,21 +1,19 @@
 {
-  "name": "nodejs-image-demo",
+  "name": "expapp",
   "version": "1.0.0",
-  "description": "nodejs image demo",
-  "author": "Sammy the Shark <sammy@example.com>",
-  "license": "MIT",
-  "main": "app.js",
-
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jawn-lim/CICD-Demo"
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
   },
-  "keywords": [
-    "nodejs",
-    "bootstrap",
-    "express"
-  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.17.3",
+    "newrelic": "^10.1.1"
+  },
+  "devDependencies": {
+    "mocha": "^9.2.2"
   }
 }
