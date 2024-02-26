@@ -53,7 +53,7 @@ jobs:
             access-key-secret: ${{ secrets.ACCESS_KEY_SECRET }}
             cluster-id: "${{ env.ACK_CLUSTER_ID }}"
       -
-        name: Deploy Container by pulling Docker Image
+        name: Deploy Container by pulling Docker Imagez
         run: |-
            kubectl apply -f gadget-store-app.yaml
            kubectl apply -f gadget-store-svc.yaml
