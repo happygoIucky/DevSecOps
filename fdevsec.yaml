@@ -11,16 +11,16 @@ scanners:
   - secret
   - iac
   - container
-  #- dast
+  - dast
 
 # Configures languages for sast scanner. If not configured, scans will be performed on all supported languages
-languages:
-  - javascript
-  - python
+#languages:
+  #- javascript
+  #- python
 
 # Configures target url where dynamic scan should be performed.
 dast:
-  url: http://husky.jl-cbc.com:9000
+  url: http://47.236.89.104:3000
   full_scan: false #true|false
 
 # Language scanners run sequentially by default. Can be configured to run in parallel.
