@@ -17,12 +17,6 @@ spec:
       containers:
         - name: huskyapp
           image: jawnlim89/simple-nodejs-to-docker:latest
-          readinessProbe:
-            tcpSocket:
-              port: 3002
-            initialDelaySeconds: 62
-            periodSeconds: 10
-            failureThreshold: 3
           resources:
             requests:
               cpu: "100m"
