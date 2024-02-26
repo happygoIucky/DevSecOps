@@ -18,7 +18,7 @@ spec:
     #    env: test-team
       containers:
       - name: gadget-store-app
-        image: nginx:1.7.9 # replace it with your exactly <image_name:tags>
+        image: jawnlim89/gadget-store-docker # replace it with your exactly <image_name:tags>
         ports:
         - containerPort: 3000
         resources:
