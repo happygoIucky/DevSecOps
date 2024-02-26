@@ -1,4 +1,4 @@
-name: simple-nodejs-app
+name: gadget-store-docker
 
 on:
   push:
@@ -40,4 +40,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USER }}/simple-nodejs-to-docker:latest
+          tags: ${{ secrets.DOCKER_USER }}/gadget-store-docker:latest

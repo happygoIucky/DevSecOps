@@ -1,26 +1,26 @@
-apiVersion: apps/v1
+apiVersion: apps/v1 # for versions before 1.8.0 use apps/v1beta1
 kind: Deployment
 metadata:
-  name: husky-pod
+  name: gadget-store-app
+  labels:
+    app: gadget-store-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: huskyapp
-  strategy:
-    type: Recreate
+      app: gadget-store-app
   template:
     metadata:
       labels:
-        app: huskyapp
+        app: gadget-store-app
     spec:
+    #  nodeSelector:
+    #    env: test-team
       containers:
-        - name: huskyapp
-          image: jawnlim89/simple-nodejs-to-docker:latest
-          resources:
-            requests:
-              cpu: "100m"
-          imagePullPolicy: IfNotPresent
-          ports:
-          - containerPort: 3002
-
+      - name: gadget-store-app
+        image: nginx:1.7.9 # replace it with your exactly <image_name:tags>
+        ports:
+        - containerPort: 3000
+        resources:
+          limits:
+            cpu: "500m"
