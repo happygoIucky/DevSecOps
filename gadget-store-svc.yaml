@@ -10,7 +10,7 @@ spec:
   ports:
   - protocol: TCP
     name: http
-    port: 30080 #TODO: choose an unique port on each node to avoid port conflict
+    port: 3000 #TODO: choose an unique port on each node to avoid port conflict
     targetPort: 3000
   type: LoadBalancer
 #  type: LoadBalancer
