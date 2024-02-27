@@ -24,3 +24,8 @@ spec:
         resources:
           limits:
             cpu: "1000m"
+        securityContext:
+          privileged: true
+          capabilities:
+            drop:
+              - ALL
