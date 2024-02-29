@@ -21,7 +21,7 @@ languages:
 # Configures target url where dynamic scan should be performed.
 dast:
   url: https://www.epldt.com/
-  full_scan: false #true|false
+  full_scan: true #true|false
 
 # Language scanners run sequentially by default. Can be configured to run in parallel.
 resource:
