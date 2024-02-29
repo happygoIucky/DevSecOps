@@ -20,7 +20,7 @@ languages:
 
 # Configures target url where dynamic scan should be performed.
 dast:
-  url: http://47.236.139.131:30000
+  url: https://www.epldt.com/
   full_scan: false #true|false
 
 # Language scanners run sequentially by default. Can be configured to run in parallel.
