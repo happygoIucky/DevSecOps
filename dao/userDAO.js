@@ -17,7 +17,7 @@ class UserDAO {
                           [username, email, cryptedPassword],
                           (err, result) => {
                             if (err) return reject(err);
-                            return resolve('User was created!');
+                            return resolve('User was createdz!');
                           });
                 } else if (err) return reject(err);
                 else return reject('Email or Username already exist');
