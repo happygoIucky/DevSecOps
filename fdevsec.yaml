@@ -20,7 +20,7 @@ languages:
 
 # Configures target url where dynamic scan should be performed.
 dast:
-  url: https://www.anext.com.sg
+  url: https://www.anext.com.sg/
   full_scan: true #true|false
 
 # Language scanners run sequentially by default. Can be configured to run in parallel.
