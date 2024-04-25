@@ -64,18 +64,18 @@ jobs:
           TF_VAR_access_key: ${{ secrets.ACCESS_KEY_ID}}
           TF_VAR_secret_key: ${{ secrets.ACCESS_KEY_SECRET }}
       -
-        name: Login to Kubernetes Cluster
-        uses: aliyun/ack-set-context@v1
-        with:
-            access-key-id: ${{ secrets.ACCESS_KEY_ID}}
-            access-key-secret: ${{ secrets.ACCESS_KEY_SECRET }}
-            cluster-id: "${{ env.ACK_CLUSTER_ID }}"
-      -
-        name: Deploy Container by pulling Docker Image from Docker Hub
-        run: |-
-           kubectl apply -f gadget-store-app.yaml
-           kubectl apply -f gadget-store-svc.yaml
-      -
+        #name: Login to Kubernetes Cluster
+        #uses: aliyun/ack-set-context@v1
+        #with:
+        #    access-key-id: ${{ secrets.ACCESS_KEY_ID}}
+        #    access-key-secret: ${{ secrets.ACCESS_KEY_SECRET }}
+        #    cluster-id: "${{ env.ACK_CLUSTER_ID }}"
+      #-
+      #  name: Deploy Container by pulling Docker Image from Docker Hub
+      #  run: |-
+      #     kubectl apply -f gadget-store-app.yaml
+      #     kubectl apply -f gadget-store-svc.yaml
+      #-
         name: Perform FortiDevSec (DAST SCAN)
         run: |
           env | grep -E "GITHUB_ACTIONS|GITHUB_RUN_NUMBER|GITHUB_REF_NAME|GITHUB_SHA" > /tmp/env
